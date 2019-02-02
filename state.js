@@ -17,6 +17,11 @@ class Choice {
 // God-class that describes the entire system
 class State {
     constructor(urban, forest, farmland, river){
+// constructor Urban using some game state variables, initiate an object called urban, the choices will change the values of variables in urban. 
+// The same for the rest of the constructors
+// The changes will follow some relationships among them
+
+
 	this.urban = urban
     }
 
