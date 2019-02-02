@@ -5,23 +5,40 @@ class Choice {
     constructor(text, option_one, option_two){
 	this.option_one = option_one;
     }
-
-    pick_choice(){
-	// This should call Display.ask_question()
-	return(appropriate_choice);
-    }
+    
+    // Store information about the game state here:
+    // Forest
+    // Lake
+    // Human
     
     
-}
+    // Option 1:
+    // "Your community doesn't have enough housing.
+    //  A forested area is in the surrounding area.
+    //  Cut it down to make space for more housing
+    //  or
+    //  build higher density city? "
 
-// God-class that describes the entire system
-class State {
-    constructor(urban, forest, farmland, river){
-	this.urban = urban
-    }
+    // Forest health --1
+    // human health ++1
+    
+    // Option 2:
+    // "Your community is experiencing blackouts.
+    //  There isn't enough energy to meet your needs.
+    //  What kind of fuel would you like to use?
+    //   A. Nuclear
+    //   B. Coal
+    //   C. Wind Turbine"
 
-    consequences_choice(choice){
-	// Carry out the choice
-	// Should probably call Display.draw()
-    }
-}
+    
+    // Forest health --1
+    // Lake health --1
+    // Human health ++1
+    
+
+    // Option 3:
+    // "Your community needs food.
+    //  How will you feed your people?
+    //   A. Fish
+    //   B. Raise Livestock
+    //   C. Farm
