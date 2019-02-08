@@ -42,3 +42,30 @@ class Choice {
     //   A. Fish
     //   B. Raise Livestock
     //   C. Farm
+
+    // Question Order
+// Housing is needed (“People are coming”)
+// Cut down forest ⇒ Fragmentation
+// Increase city density ⇒ Urban quality goes down (river pollution, etc.)
+
+// Power is needed (“Our infrastructure can’t cope”)
+// Nuclear ⇒ Waste storage, decreased land quality
+// Coal ⇒ Decreased air quality
+// Wind turbines ⇒ Decreased birds, decreased recreation
+
+// Food is needed (“Feed us”)
+// Fish farm ⇒ bad river--instantly
+// Livestock ⇒ leaching
+
+// Recreation is needed (“Now we need fun”)
+// Forest ⇒ less farms, less food
+// Swim in the river ⇒ Worse river quality
+// Denser city ⇒ Pollution
+
+
+
+
+
+
+
+    
