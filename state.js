@@ -17,9 +17,7 @@ class Choice {
 // God-class that describes the entire system
 class State {
     constructor(urban, forest, farmland, river){
-// constructor urban creates class urban, and we can have different objects within it. We are given choices (binaries), based on which 
-// the objects under class urban changes. 	  
-// The same for the rest of the constructors
+// constructor creates instance urban. 	 
 // 
 	    this.urban = urban
 	    this.forest = forest
