@@ -2,26 +2,96 @@ class Choice {
 
     // When constructing a choice, there should be a choice that you get next
     // The first parameter will need more work I imagine
+
     constructor(text, option_one, option_two){
 	this.option_one = option_one;
     }
-
-    pick_choice(){
-	// This should call Display.ask_question()
-	return(appropriate_choice);
-    }
+    
+    // Store information about the game state here:
+    // Forest
+    // Lake
+    // Human
     
     
-}
+    // Option 1:
+    // "Your community doesn't have enough housing.
+    //  A forested area is in the surrounding area.
+    //  Cut it down to make space for more housing
+    //  or
+    //  build higher density city? "
 
-// God-class that describes the entire system
-class State {
-    constructor(urban, forest, farmland, river){
-	this.urban = urban
-    }
+    // Forest health --1
+    // human health ++1
+    
+    // Option 2:
+    // "Your community is experiencing blackouts.
+    //  There isn't enough energy to meet your needs.
+    //  What kind of fuel would you like to use?
+    //   A. Nuclear
+    //   B. Coal
+    //   C. Wind Turbine"
 
-    consequences_choice(choice){
-	// Carry out the choice
-	// Should probably call Display.draw()
-    }
-}
+    
+    // Forest health --1
+    // Lake health --1
+    // Human health ++1
+    
+
+    // Option 3:
+    // "Your community needs food.
+    //  How will you feed your people?
+    //   A. Fish
+    //   B. Raise Livestock
+    //   C. Farm
+
+
+    // Austin's notes
+    
+    
+    // Question Order--First Half
+    // Housing is needed (“People are coming”)
+    // Cut down forest ⇒ Fragmentation
+    // Increase city density ⇒ Urban quality goes down (river pollution, etc.)
+
+    // Power is needed (“Our infrastructure can’t cope”)
+    // Nuclear ⇒ Waste storage, decreased land quality
+    // Coal ⇒ Decreased air quality
+    // Wind turbines ⇒ Decreased birds, decreased recreation
+
+    // Food is needed (“Feed us”)
+    // Fish farm ⇒ bad river--instantly
+    // Livestock ⇒ leaching
+
+    // Recreation is needed (“Now we need fun”)
+    // Forest ⇒ less farms, less food
+    // Swim in the river ⇒ Worse river quality
+    // Denser city ⇒ Pollution
+
+    // Question Order--Second Half
+    // Too little/poor quality forest
+    // Street trees/ urban forests  ⇒ better urban environment
+    // Outreach, to use what you have  ⇒ greater health, greater money
+
+    // Too little/poor quality farmland
+    // Crop cycling  ⇒ Greater biodiversity (food, birds, insects)
+    // Distributed agriculture  ⇒ urban, recreational, greater food
+
+    // Poor air quality
+    // Street tree & urban forests ⇒ better urban pollution (grime)
+    // Outreach to use what you have ⇒ healthier & money
+
+    // Bad river quality
+    // Build filtration plant  ⇒ fixes river quality, but costs more money
+    // Wetland expansion  ⇒ greater birds, greater recreation
+
+
+
+
+
+
+
+
+
+
+
+    
