@@ -7,7 +7,7 @@ class Choice {
 	this.option_one = option_one;
     }
 
-// the text will have the question that affects the class State. This happens by choosing either option_one OR option_two
+    // the text will have the question that affects the class State. This happens by choosing either option_one OR option_two
     pick_choice(){
 	// This should call Display.ask_question()
 	return(appropriate_choice);
@@ -15,25 +15,25 @@ class Choice {
 
     
 
-// God-class that describes the entire system
-class State {
-    constructor(urban, forest, farmland, river){
-// constructor creates instance urban. 	 
-// 
+    // God-class that describes the entire system
+    class State {
+	constructor(urban, forest, farmland, river){
+	    // constructor creates instance urban. 	 
+	    // 
 	    this.urban = urban
 	    this.forest = forest
 	    this.farmland = farmland
 	    this. river = river
-    }
+	}
 
-    consequences_choice(choice){
+	consequences_choice(choice){
 	    if (choice = option_one){
-	      this.urban = urban+1
-	      this.forest = forest-1
-	      this.farmland = farmland -1
-	      this.river= river-1
-      }
-	// Carry out the choice
-	// Should probably call Display.draw()
+		this.urban = urban+1
+		this.forest = forest-1
+		this.farmland = farmland -1
+		this.river= river-1
+	    }
+	    // Carry out the choice
+	    // Should probably call Display.draw()
+	}
     }
-}
