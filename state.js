@@ -2,17 +2,18 @@ class Choice {
 
     // When constructing a choice, there should be a choice that you get next
     // The first parameter will need more work I imagine
+
     constructor(text, option_one, option_two){
 	this.option_one = option_one;
     }
+
 // the text will have the question that affects the class State. This happens by choosing either option_one OR option_two
     pick_choice(){
 	// This should call Display.ask_question()
 	return(appropriate_choice);
     }
+
     
-    
-}
 
 // God-class that describes the entire system
 class State {
@@ -26,11 +27,12 @@ class State {
     }
 
     consequences_choice(choice){
-	    if (choice = option_one)
-	    this.urban = urban+1
-	    this.forest = forest-1
-	    this.farmland = farmland -1
-	    this.river= river-1
+	    if (choice = option_one){
+	      this.urban = urban+1
+	      this.forest = forest-1
+	      this.farmland = farmland -1
+	      this.river= river-1
+      }
 	// Carry out the choice
 	// Should probably call Display.draw()
     }
