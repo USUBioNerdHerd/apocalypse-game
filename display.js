@@ -2,6 +2,21 @@ class Display {
 
     constructor(params) {
 	this.attribute = something;
+	//size of display image
+	    //do we want to start by creating a variable containing the dimensions
+	    //make display image
+	    //call display image
+	
+	//size of individual sections (forest, river, urban, ...)
+	
+	//shape of the individual sections
+	
+	//size of the question box
+	
+	//shape of the question box
+	
+	//
+	
     }
 
     update_environment(component, change) {
