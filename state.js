@@ -11,18 +11,19 @@ class Choice {
 	this.change_two = change_two;
     }
 
-	
+
 
 }
 
-select_option1(){
-    master_selection(1)
+function select_option1(){
+    master_selection(1);
 }
 
-select_option2(){		
-    master_selection(2)}
+function select_option2(){
+    master_selection(2);
+  }
 
-master_selection(choice){
+function master_selection(choice){
     if(choice == 1)
 	state.change_landscape(data[curr_choice][0]);
     state.change_landscape(data[curr_choice][1]);
@@ -32,12 +33,12 @@ master_selection(choice){
 // God-class that describes the entire system
 class State {
     constructor(urban, forest, farmland, river){
-	this.urban = urban
-	this.forest = forest
-	this.farmland = farmland
+	this.urban = urban;
+	this.forest = forest;
+	this.farmland = farmland;
 	this.river = river;
     }
-    
+
     change_landscape(choice_change){
 	this.urban += choice_change[0];
 	this.forest += choice_change[1];

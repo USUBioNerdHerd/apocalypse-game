@@ -74,14 +74,9 @@ class Display {
 
   }
 
-  drawEverything();
-
-    update_environment(component, change) {
-	// Make change to component
-	// Call draw
-    }
 
 
+}
 
 }
 
