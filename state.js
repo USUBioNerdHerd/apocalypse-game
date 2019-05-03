@@ -12,13 +12,22 @@ class Choice {
     }
 
     pick_choice(choice){
-	// TO-DO: Call some kind of display function
+		var choiceDisplay = prompt("You have a choice to make : " + first_choice);
+		if (choiceDisplay == "1") {
+			alert("You decided to " + option_one + "let's see what happens...");
+		}
+		else if (choiceDisplay == "2"){
+			alert("You decided to " + option_two + "let's see what happens...");
+		}
+		else {
+			alert("That isn't one of your options! You can enter either 1 or 2.");
+		}
+
 	if(choice == this.option_one)
 	    return(this.change_one);
 	return(this.change_two);
     }
 }
-
 
 
 // God-class that describes the entire system
