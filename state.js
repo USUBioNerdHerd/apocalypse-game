@@ -11,19 +11,21 @@ class Choice {
 	this.change_two = change_two;
     }
 
-	select_option1(){
-	master_selection(1)
-	}
+	
 
-	select_option2(){		
-	master_selection(2)}
+}
 
-	master_selection(choice){
-		if(choice == 1)
-	    return(this.change_one);
-	return(this.change_two);
-	//display next option
-    }
+select_option1(){
+    master_selection(1)
+}
+
+select_option2(){		
+    master_selection(2)}
+
+master_selection(choice){
+    if(choice == 1)
+	state.change_landscape(data[curr_choice][0]);
+    state.change_landscape(data[curr_choice][1]);
 }
 
 
@@ -41,7 +43,10 @@ class State {
 	this.forest += choice_change[1];
 	this.farmland += choice_change[2];
 	this.river += choice_change[3];
-	
+
+	//engine.update(this);
+	curr_choice += 1;
+	document.write(data.option[curr_choice]);
 	return([this.urban, this.forest, this.farmland, this.river]);
     }
 
