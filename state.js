@@ -4,11 +4,11 @@ class Choice {
     // The first parameter will need more work I imagine
 
     constructor(text, option_one, option_two, change_one, change_two){
-	var this.text = text;
-	var this.option_one = option_one;
-	var this.option_two = option_two;
-	var this.change_one = change_one;
-	var this.change_two = change_two;
+	this.text = text;
+	this.option_one = option_one;
+	this.option_two = option_two;
+	this.change_one = change_one;
+	this.change_two = change_two;
     }
 
     pick_choice(choice){
@@ -24,10 +24,10 @@ class Choice {
 // God-class that describes the entire system
 class State {
     constructor(urban, forest, farmland, river){
-	var this.urban = urban
-	var this.forest = forest
-	var this.farmland = farmland
-	var this.river = river;
+	this.urban = urban
+	this.forest = forest
+	this.farmland = farmland
+	this.river = river;
     }
     
     change_landscape(choice_change){
