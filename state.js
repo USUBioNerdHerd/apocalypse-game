@@ -43,10 +43,10 @@ class State {
 
 // This allows you to write code of the form:
 
-first_choice = Choice(from, justins, yaml, stuff);
-second_choice = Choice(other, stuff from, justins, yaml);
+//first_choice = Choice(from, justins, yaml, stuff);
+//second_choice = Choice(other, stuff from, justins, yaml);
 
-game_state = State(50, 50, 50, 50);
-game_state.change_landscape(first_choice.pick_choice());
-game_state.change_landscape(second_choice.pick_choice());
+//game_state = State(50, 50, 50, 50);
+//game_state.change_landscape(first_choice.pick_choice());
+//game_state.change_landscape(second_choice.pick_choice());
 // ... or do this using loops for greater efficiency etc.
