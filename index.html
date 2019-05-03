@@ -28,8 +28,6 @@
       }
       }
     </style>
-    <!-- Custom styles for this template -->
-    <link href="starter-template.css" rel="stylesheet">
   </head>
   <body>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
@@ -72,14 +70,11 @@
 
  <button onclick="select_option1()">Option 1</button>
  <button onclick="select_option2()">Option 2</button>
-
-	<script type="text/javascript", src="./display.js">
-	<script type="module">
-
-	    engine = new Display();
-
-</script>
-	  
+        
+	<script src="./display.js"></script>
+	<script src="./state.js"></script>
+	<script>
+	  engine = new Display();
 	</script>
 
       </div>
