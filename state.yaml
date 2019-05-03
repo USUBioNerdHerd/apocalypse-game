@@ -1,6 +1,6 @@
 # .yaml file to store the decisions relevant to the choices in the game
 
-Introduction: It seems like you've been driving for days, but it has really only been four hours. As a tree detective you have become used to a life of danger and intrigue. Everywhere you go people know your name: Dr. Sammie Jones. With a feather in your hat, you ride in your Honda Accord, breezing down the highway with your hands at 10 and 2. You see a billboard advertising for a city exit. "Welcome to Brandenburg! Home of the first canine astronaught!" A strange force compells you to take the exit. As you drive down the main street of Brandenburg you notice a commotion at the City Hall. You park and enter Brandenburg City Hall. The room is hot and crowded with unhappy people. You are just about to get back in your car when several members of the angry public place you in a chair... They have made you their King. As their king, it is your duty to be a just and kind ruler. These are your challenges.
+Introduction: It seems like you've been driving for days, but it has really only been four hours. As a tree detective you have become used to a life of danger and intrigue. Everywhere you go people know your name, Dr. Sammie Jones. With a feather in your hat, you ride in your Honda Accord, breezing down the highway with your hands at 10 and 2. You see a billboard advertising for a city exit. "Welcome to Brandenburg! Home of the first canine astronaught!" A strange force compells you to take the exit. As you drive down the main street of Brandenburg you notice a commotion at the City Hall. You park and enter Brandenburg City Hall. The room is hot and crowded with unhappy people. You are just about to get back in your car when several members of the angry public place you in a chair... They have made you their King. As their king, it is your duty to be a just and kind ruler. These are your challenges.
 
 
 # Optional Option 1 Brandenburg has been thought of as the big city by the rural communities that surround it for generations. In reality, the major expansion of the city has taken place in the last few years. Big name companies like Poppa Joe's Picinic Baskets and Tiny Tina's Turntables have discovered the affordable cost of living and cheap real estate that Brandenburg has to offer, and they are buying all of the property they can. Fortunately, the incoming industries are stimulating the Brandenburg economy by providing good paying jobs and high demand for local contractors. People are excited, and everyone wants to move to Brandenburg. Unfortunately, there aren't enough houses for all of these people to live in. Some of your advisors argue that the Wetlands to Brandenburg's North should be converted into a suburb. Others are arguing that Brandenburg should allow more apartment complexes to be built in the center of town.
@@ -9,34 +9,28 @@ Introduction: It seems like you've been driving for days, but it has really only
 
 option 1: Housing Crisis
 
-  title: New Neighbors!
-  summary: The Big name industries are expanding into your town bringing people, jobs, and money. The cost of living in the community is rising, and the demand for housing is much greater than the supply. Big change has brought a big problem. Where will all of these people live? You may either increase housing within the city limits or work to convert the wetlands in to a more suitable human habitat.
+title: "New Neighbors!"
+summary: "The Big name industries are expanding into your town bringing people, jobs, and money. The cost of living in the community is rising, and the demand for housing is much greater than the supply. Big change has brought a big problem. Where will all of these people live? You may either increase housing within the city limits or work to convert the wetlands in to a more suitable human habitat."
 
-  pop-sci:
-  literature:
-
-  first_option: Increase housing within city limits
-  second_option: Convert wetlands to urban land
-  
-
-
-
+pop-sci:
+literature:
+first_option: "Increase housing within city limits"
+second_option: "Convert wetlands to urban land"
+    
 
 
 option 2: Energy Crisis
 
-  title: BLACKOUT!
-  summary: Your community doesn't have enough electricity to meet its needs. Companies are eager to dig into coal reserves that exist outside the city limits, but there are concerns within the community about the impacts of burning coal on the local air quality. The federal government has been looking for a potential cities to power with small modular nuclear reactors. The citizens of the community are concerned that deuteriated water will leak into the water table. Wind energy and hydroelectric energy are available by placing wind mills in the foothills to the East and hydroelectric dams in the river to the West. The community memebers are generallly affable to pursue these options. Concerned members of the community worry that these solutions will inhibit fish migration patterns, decrease the prevalence of birds, and tarnish the beautiful landscape that fueled their reason to move here.
+title: "BLACKOUT!"
+summary: "Your community doesn't have enough electricity to meet its needs. Companies are eager to dig into coal reserves that exist outside the city limits, but there are concerns within the community about the impacts of burning coal on the local air quality. The federal government has been looking for a potential cities to power with small modular nuclear reactors. The citizens of the community are concerned that deuteriated water will leak into the water table. Wind energy and hydroelectric energy are available by placing wind mills in the foothills to the East and hydroelectric dams in the river to the West. The community memebers are generallly affable to pursue these options. Concerned members of the community worry that these solutions will inhibit fish migration patterns, decrease the prevalence of birds, and tarnish the beautiful landscape that fueled their reason to move here."
+pop_sci: "https://www.nationalgeographic.com/environment/energy/reference/nuclear-energy/"
+literature:
+first_option: "Expand Nuclear Energy (Small Modular Reactors)"
+second_option: "Burn Coal and Natural Gas"
+third_option: "Use Wind and Hydroelectric energy"
+      
 
-  pop_sci: https://www.nationalgeographic.com/environment/energy/reference/nuclear-energy/
-  literature:
-
-  first_option: Expand Nuclear Energy (Small Modular Reactors)
-  second_option: Burn Coal and Natural Gas
-  third_option: Use Wind and Hydroelectric energy
-  
-
-# PopScience--National Geographic explains Nuclear energy 
+      # PopScience--National Geographic explains Nuclear energy 
 
 
 
@@ -45,15 +39,13 @@ option 2: Energy Crisis
 
 
 option 3: Food Crisis
-  title: Hunger is among us
-  summary: Over the past few years, your community has increasingly felt the impacts of food insecurity. While food banks and charitable organizations are doing a lot to feed hungry locals, many people are pointing to the high cost of local food. People have suggested that more food producers be allowed to use local resources to produce cheap food. An interested party has suggested starting a fish farm. Experts warn that fish farms have been known to affect local water quality. Others are suggesting that the less arable land to the West be sold as rangeland to increase local meat supplies. Officals worry about how large scale butcehr operations may affect the ecosystem.
-
-  pop_sci: 
-  literature: https://science.sciencemag.org/content/333/6047/1289/tab-pdf
-  
-  first_option: Sell rangeland
-  second_option: Permit Fish Farms
-
+      
+title: "Hunger is among us"
+summary: "Over the past few years, your community has increasingly felt the impacts of food insecurity. While food banks and charitable organizations are doing a lot to feed hungry locals, many people are pointing to the high cost of local food. People have suggested that more food producers be allowed to use local resources to produce cheap food. An interested party has suggested starting a fish farm. Experts warn that fish farms have been known to affect local water quality. Others are suggesting that the less arable land to the West be sold as rangeland to increase local meat supplies. Officals worry about how large scale butcehr operations may affect the ecosystem."
+pop_sci: 
+literature: "https://science.sciencemag.org/content/333/6047/1289/tab-pdf"
+first_option: "Sell rangeland"
+second_option: "Permit Fish Farms"
 
 
 
@@ -63,119 +55,104 @@ option 3: Food Crisis
 
 
 
-# #Alternative  option 3: Food Crisis
 
-#   title: Market Opportunity!
-#   summary: Global trade wars have created a high demand for potatoes, which your community is famous for producing. While other areas of the world potato market are working hard to meet the demands put upon them, they don't have enough land to substantially increase their potato production. Big Pops Potatoes, a large potato farming company, has made plans to buy large plots of land to the Southwest. Some environmentally conscious members of the community have voiced concerns about converting wildlife habitat into farmland. They argue that the strip of land is key to connecting two large habitats for bears and elk. Most members of the community are eager to gain from the new opportunities.
+        # #Alternative  option 3: Food Crisis
 
-#   pop_sci: https://www.environment.nsw.gov.au/resources/nature/landholderNotes15WildlifeCorridors.pdf
-#   literature: https://www.nature.com/articles/d41586-019-00896-2?fbclid=IwAR3_zmO9okTOwA1wrft8TOWHUa4kNiiM-VyjBVGiuoT1U6f2HjS1J4JYb7U
+        #   title: Market Opportunity!
+        #   summary: Global trade wars have created a high demand for potatoes, which your community is famous for producing. While other areas of the world potato market are working hard to meet the demands put upon them, they don't have enough land to substantially increase their potato production. Big Pops Potatoes, a large potato farming company, has made plans to buy large plots of land to the Southwest. Some environmentally conscious members of the community have voiced concerns about converting wildlife habitat into farmland. They argue that the strip of land is key to connecting two large habitats for bears and elk. Most members of the community are eager to gain from the new opportunities.
 
-#   first_option:
-#   second_option:
+        #   pop_sci: https://www.environment.nsw.gov.au/resources/nature/landholderNotes15WildlifeCorridors.pdf
+        #   literature: https://www.nature.com/articles/d41586-019-00896-2?fbclid=IwAR3_zmO9okTOwA1wrft8TOWHUa4kNiiM-VyjBVGiuoT1U6f2HjS1J4JYb7U
 
-# # PopScience--EPR agency explains the importance of Wildlife corridors
-# # Literature--US-China Trade war accelerates deforestation of the Amazon through increasing demand for soya beans
-  
+        #   first_option:
+          #   second_option:
+
+            # # PopScience--EPR agency explains the importance of Wildlife corridors
+            # # Literature--US-China Trade war accelerates deforestation of the Amazon through increasing demand for soya beans
+            
 
 
 
 
 option 4: Fun Crisis
-
-  title: Fun in the Sun
-  summary: Pristine pools and wilderness to the Southwest of your city have been attracting tourists for years. Instagram models have been taking picutres of themselves bathing in the pools, driving up tourism to those spots. While most of the tourists come to enjoy an authentic pristine wilderness area, the popularity of the spot has increased the amount of traffic through the area. State employees are regularly sent out to collect trash, remove waste, and clean graffiti. Budget-minded people are suggesting that more infrastructure such as public toilets and trash cans be installed at the location so that it is easier for the state to maintain the area. Activists are arguing that the area should be shut down to the public in an effort to restore the habitat to its previous quality. The local business community strongly opposes closing access to the pools because their livelihood is tied to the tourism driven by the pools.
-
-  pop_sci: https://theoutline.com/post/2450/instagram-is-loving-nature-to-death?zd=1&zi=z76muwwf
-  literature: https://doi.org/10.1016/j.biocon.2016.10.009
-
-  first_option: Build more infratstructure
-  second_option: Close the pools to the public
-  third_option: Charge fees for entrance to the pools
-
+title: "Fun in the Sun"
+summary: "Pristine pools and wilderness to the Southwest of your city have been attracting tourists for years. Instagram models have been taking picutres of themselves bathing in the pools, driving up tourism to those spots. While most of the tourists come to enjoy an authentic pristine wilderness area, the popularity of the spot has increased the amount of traffic through the area. State employees are regularly sent out to collect trash, remove waste, and clean graffiti. Budget-minded people are suggesting that more infrastructure such as public toilets and trash cans be installed at the location so that it is easier for the state to maintain the area. Activists are arguing that the area should be shut down to the public in an effort to restore the habitat to its previous quality. The local business community strongly opposes closing access to the pools because their livelihood is tied to the tourism driven by the pools."
+pop_sci: "https://theoutline.com/post/2450/instagram-is-loving-nature-to-death?zd=1&zi=z76muwwf"
+literature: "https://doi.org/10.1016/j.biocon.2016.10.009"
+first_option: "Build more infratstructure"
+second_option: "Close the pools to the public"
+third_option: "Charge fees for entrance to the pools"
 
 
 option 5: Environmental Crisis
-
-  title: A Green City
-  summary: It's becoming clear that the city is taking an increasingly large toll on the local environment. As tourism increases and the number of people who want to live in the countryside increases, there are more sources of pollution. The homes being built are stretching towards virgin lands as people attempt to unite the comforts of the modern world with the beauty of a pristine environment. Locals are concerned about the impact they are having on their community. Some people are urging you to plant an urban forest to help clean the air and improve the quality of life of city-dwellers. Many are arguing that outreach should be increased to get homeowners to plant more trees on private land. 
-
-  pop_sci: https://www.nature.com/articles/d41586-019-01026-8
-  literature: https://esajournals.onlinelibrary.wiley.com/doi/pdf/10.1002/ecs2.2105
-
-  first_option: Plant a Community Urban Forest
-  second_option: Encourage locals to grow more trees locally
+title: "A Green City"
+summary: "It's becoming clear that the city is taking an increasingly large toll on the local environment. As tourism increases and the number of people who want to live in the countryside increases, there are more sources of pollution. The homes being built are stretching towards virgin lands as people attempt to unite the comforts of the modern world with the beauty of a pristine environment. Locals are concerned about the impact they are having on their community. Some people are urging you to plant an urban forest to help clean the air and improve the quality of life of city-dwellers. Many are arguing that outreach should be increased to get homeowners to plant more trees on private land."
+pop_sci: "https://www.nature.com/articles/d41586-019-01026-8"
+literature: "https://esajournals.onlinelibrary.wiley.com/doi/pdf/10.1002/ecs2.2105"
+first_option: "Plant a Community Urban Forest"
+second_option: "Encourage locals to grow more trees locally"
 
 
 
 
-# Alternative option 5: Environmental Crisis
+            # Alternative option 5: Environmental Crisis
 
-#   title: The forest needs saving
-#   summary: Despite efforts to maintain habitat for the local wildlife, it has become clear that there isn't enough effective habitat available to wild animals. They are making their way into the highways and homes of the local community. Effectively managing land takes time, money, and manpower. A group of experts have given you a list of properties. They say that if you buy these properties and restore the forests there, then two forest habitats will be connected and less animals will wander to the roads and highways. Other experts suggest that the city habitat be made to look more like the surrounding habitat to preserve available habitat for local species. 
+            #   title: The forest needs saving
+            #   summary: Despite efforts to maintain habitat for the local wildlife, it has become clear that there isn't enough effective habitat available to wild animals. They are making their way into the highways and homes of the local community. Effectively managing land takes time, money, and manpower. A group of experts have given you a list of properties. They say that if you buy these properties and restore the forests there, then two forest habitats will be connected and less animals will wander to the roads and highways. Other experts suggest that the city habitat be made to look more like the surrounding habitat to preserve available habitat for local species. 
 
-#   pop_sci: https://www.nature.com/articles/d41586-019-01026-8
-#   literature: 
+            #   pop_sci: https://www.nature.com/articles/d41586-019-01026-8
+            #   literature: 
 
-#   first_option:
-#   second_option:
+              #   first_option:
+                #   second_option:
 
 
 
 option 6: Land Usage Crisis
-
-   title: How to Farm the Farm
-   summary: Experts tell you that the way that agricultural operations make a large impact on the environment. Some suggest that the community should adopt standards for crop cycling techniques. This may increase the diversity of birds and insects around farms. Others are arguing for a distributed agricultural technique, which they say could bring more food into cities and increase the quality of life of those without easy access to pristine outdoor habitat or clean air.
-
-   pop_sci: 
-   literature: 
-
-   first_option: Cycle Crops
-   second_option: Distributed Agricultural System
+title: "How to Farm the Farm"
+summary: "Experts tell you that the way that agricultural operations make a large impact on the environment. Some suggest that the community should adopt standards for crop cycling techniques. This may increase the diversity of birds and insects around farms. Others are arguing for a distributed agricultural technique, which they say could bring more food into cities and increase the quality of life of those without easy access to pristine outdoor habitat or clean air."
+pop_sci: 
+literature: 
+first_option: "Cycle Crops"
+second_option: "Distributed Agricultural System"
 
 
 
-# Alternative option 6: Land Usage Crisis
+                      # Alternative option 6: Land Usage Crisis
 
-#   title: Inconvenient Neighbors
-#   summary: As your community expands, the habitat is changing to facillitate species that are well suited to coexist with humans. Where the Buffalo used to rome, now white tailed mule deer are abundant. Many people moved out here to the countryside to live quietly in a beautiful place surrounded by wildlife. At first they were excited to have white tailed deer in their backyard, but the deer ate their rosebushes and browsed on their trees. Some members of the community have small dogs that antagonize the deer. The deer defend themselves with their hooves, and there have been puppy casualties. The deer are also causing accidents for drivers on the local highway. Unknown to many, these white-tailed deer are actually new to the community too. Environmental officials are concerned that it will displace the native mule deer. Some members of the community argue that the white tailed deer should be culled, while others are maintaining that it is a part of the natural beauty and wildlife of the area.
+                      #   title: Inconvenient Neighbors
+                      #   summary: As your community expands, the habitat is changing to facillitate species that are well suited to coexist with humans. Where the Buffalo used to rome, now white tailed mule deer are abundant. Many people moved out here to the countryside to live quietly in a beautiful place surrounded by wildlife. At first they were excited to have white tailed deer in their backyard, but the deer ate their rosebushes and browsed on their trees. Some members of the community have small dogs that antagonize the deer. The deer defend themselves with their hooves, and there have been puppy casualties. The deer are also causing accidents for drivers on the local highway. Unknown to many, these white-tailed deer are actually new to the community too. Environmental officials are concerned that it will displace the native mule deer. Some members of the community argue that the white tailed deer should be culled, while others are maintaining that it is a part of the natural beauty and wildlife of the area.
 
-#   pop_sci: 
-#   literature: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5058518/
+                      #   pop_sci: 
+                        #   literature: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5058518/
 
-#   first_option: Cull the deer
-#   second_option: Keep the deer
+                        #   first_option: Cull the deer
+                        #   second_option: Keep the deer
 
 
 
 
 option 7: Air Quality Crisis
-
-  title: The air makes our children sick
-  summary: The air quality in your city has its good days and its bad days. When polluted air is warmer than the air above it, it rises into the upper atmosphere and the pollution is carried away. However, the polluted air coming from your Mountain community is often cooler than the air above it. These 'inversions' cause the polluted air to stay in the community. The incidence of breathing problems is increasing in your community, and experts tell you that the average lifespan of the community is going to decrease if a solution isn't found to the air quality problem. Implementing reforms on transportation infrastructure could cut into the productivity of the community. Some are suggesting that you increase public transportation availablility to reduce the community's emmissions. Others argue that you should increase programs to encourage lifestyle choices that facillitate clean air within the community. Others are in support of a new program to plant more trees in street and neighborhoods to clean the air and filter out grime. 
-
-  pop_sci: https://www.swep.net/refrigerant-handbook/5.-refrigerants/sd5/
-  literature: https://onlinelibrary.wiley.com/doi/full/10.1002/ece3.2316
-
-  first_option: Overhaul of Public Transportation
-  second_option: Outreach to locals
-  third_option: Plant trees in the city
+title: "The air makes our children sick"
+summary: "The air quality in your city has its good days and its bad days. When polluted air is warmer than the air above it, it rises into the upper atmosphere and the pollution is carried away. However, the polluted air coming from your Mountain community is often cooler than the air above it. These 'inversions' cause the polluted air to stay in the community. The incidence of breathing problems is increasing in your community, and experts tell you that the average lifespan of the community is going to decrease if a solution isn't found to the air quality problem. Implementing reforms on transportation infrastructure could cut into the productivity of the community. Some are suggesting that you increase public transportation availablility to reduce the community's emmissions. Others argue that you should increase programs to encourage lifestyle choices that facillitate clean air within the community. Others are in support of a new program to plant more trees in street and neighborhoods to clean the air and filter out grime."
+pop_sci: "https://www.swep.net/refrigerant-handbook/5.-refrigerants/sd5/"
+literature: "https://onlinelibrary.wiley.com/doi/full/10.1002/ece3.2316"
+first_option: "Overhaul of Public Transportation"
+second_option: "Outreach to locals"
+third_option: "Plant trees in the city"
 
 
 
 
 
 option 8: Water Quality Crisis
-
-  title: Toxic
-  summary: High levels of nutrients and hot days are combining to cause algal blooms in Lazybottom Lake. People have been warned about the toxins, but no one warned their dogs! Dogs have been dying as a result of swimming in the lake. The water quality experts say that the algal bloom in Lake Lazybottom is another casualty of Nitrogen and Phosphorous pollution in the water. They tell you that this pollution mainly comes from local agrigculture. Some experts are suggesting that programs be started to aide local farmers in adjusting their practices to reduce the amount of fertilizer that runs off into local lakes and streams. Others argue that wetland habitat should be expanded because it will clean the water. A few experts are arguing that it is worthwhile to install a filtration plant to clean the water.
-
-  pop_sci: https://www.deseretnews.com/article/865580228/Utah-facing-costly-water-pollution-problem.html
-  literature:
-
-  first_option: Increase Wetland Habitat
-  second_option: Install a Filtration Plant
-  third_option: Initiate a program to reduce agricultural runoff
+title: "Toxic"
+summary: "High levels of nutrients and hot days are combining to cause algal blooms in Lazybottom Lake. People have been warned about the toxins, but no one warned their dogs! Dogs have been dying as a result of swimming in the lake. The water quality experts say that the algal bloom in Lake Lazybottom is another casualty of Nitrogen and Phosphorous pollution in the water. They tell you that this pollution mainly comes from local agrigculture. Some experts are suggesting that programs be started to aide local farmers in adjusting their practices to reduce the amount of fertilizer that runs off into local lakes and streams. Others argue that wetland habitat should be expanded because it will clean the water. A few experts are arguing that it is worthwhile to install a filtration plant to clean the water."
+pop_sci: "https://www.deseretnews.com/article/865580228/Utah-facing-costly-water-pollution-problem.html"
+literature:
+first_option: "Increase Wetland Habitat"
+second_option: "Install a Filtration Plant"
+third_option: "Initiate a program to reduce agricultural runoff"
 
 
 

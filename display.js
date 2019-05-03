@@ -121,6 +121,27 @@ class Display {
 
 	// we need a function to define position and/or update sprite based on frame
 
+	// Perhaps we do something different at the start of the game?
+	begin() {
+	    //the environment start up will contain information: standard language; needs to remember information
+	    //intial canvas of the map 
+	    //welcome box..click on this welcome box. It then redirects you to the main screen of the game 
+	    //title
+	    //description box
+	    //sound or music....maybe
+	    
+	}
+	// draw background layer
+
+	// draw each of 4 polygons
+
+	// display sprite
+	// determine position of sprite depending on frame
+	// * alternatively, we could have multiple sprites instead of moving them
+	// ** or, we should do both: moving, changing sprites
+
+	// we need a function to define position and/or update sprite based on frame
+
 	// pass frame to next iteration of draw()
 	// alternatively, frame count be saved globally
 
