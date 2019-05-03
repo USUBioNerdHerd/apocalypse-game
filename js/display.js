@@ -3,15 +3,27 @@ function color_gradient(x, component) {
     var rainbow = new Rainbow();
     rainbow.setNumberRange(0, numberOfItems);
     if (component == "City"){
+	 textures.paths()
+	    .d("squares")
+	    .stroke("#777a79")
 	rainbow.setSpectrum('white', 'black');
     }
     if (component == "Farm"){
+	textures.lines()
+	    .orientation("3/8")
+	    .stroke("#015943")
 	rainbow.setSpectrum("#165b02", "#47300a");
     }
     if (component == "Forest"){
+	textures.paths()
+	    .d("caps")
+	    .stroke("#015943")
 	rainbow.setSpectrum("#193a00", "#231600");
     }
     if (component == "River"){
+	textures.paths()
+	    .d("waves")
+	    .stroke("#c0ddf7")
 	rainbow.setSpectrum("#25a8f9", "#03002b");
     }
     return "#" + rainbow.colourAt(x);
