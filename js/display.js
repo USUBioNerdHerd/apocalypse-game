@@ -80,5 +80,6 @@ function drawEverything(state) {
     drawPoly([ 50,450, 200,460, 200,200, 50,300, 40,450  ],
        forest_color, "Forest", [80, 370]);
     drawPoly([ 500,0, 450,0, 230,200, 220,500, 270,500, 270,270, 500,50 ],
-       river_color, "River", [350, 150]);
+	     river_color, "River", [350, 150]);
+}
 

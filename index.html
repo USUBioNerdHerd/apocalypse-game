@@ -86,8 +86,8 @@
   <div class="card-body">
     <h5 class="card-title">Time to make a choice...</h5>
     <p class="card-text" id="choice-text-short">You should never even see me.</p></p>
-<a href="#" class="card-link" id="choice_one_button"><button onclick="master_selection(0)">Option 1</button></a>
-<a href="#" class="card-link" id="choice_two_button"><button onclick="master_selection(0)">Option 2</button></a>
+<a href="#" class="card-link"><button onclick="master_selection(0)" id="choice_one_button">Option 1</button></a>
+<a href="#" class="card-link"><button onclick="master_selection(0)" id="choice_two_button">Option 2</button></a>
 </div>
 </div>
 
@@ -123,6 +123,10 @@
     drawEverything(state.current_state())
     document.getElementById("choice-text-block").innerHTML = data[0].summary;
     document.getElementById("choice-text-title").innerHTML = data[0].title;
+
+    document.getElementById("choice-text-short").innerHTML = data[0].choice[0];
+    document.getElementById("choice_one_button").innerHTML = data[0].choice[1].short;
+    document.getElementById("choice_two_button").innerHTML = data[0].choice[2].short;
     
   </script>
 </body>
