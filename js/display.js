@@ -3,16 +3,28 @@ function color_gradient(x, component) {
     var rainbow = new Rainbow();
     rainbow.setNumberRange(0, numberOfItems);
     if (component == "City"){
+	 textures.paths()
+	    .d("squares")
+	    .stroke("#777a79")
 	rainbow.setSpectrum('white', 'black');
     }
     if (component == "Farm"){
-	rainbow.setSpectrum('green', 'yellow');
+	textures.lines()
+	    .orientation("3/8")
+	    .stroke("#015943")
+	rainbow.setSpectrum("#165b02", "#47300a");
     }
     if (component == "Forest"){
-	rainbow.setSpectrum('green', 'brown');
+	textures.paths()
+	    .d("caps")
+	    .stroke("#015943")
+	rainbow.setSpectrum("#193a00", "#231600");
     }
     if (component == "River"){
-	rainbow.setSpectrum('blue', 'brown');
+	textures.paths()
+	    .d("waves")
+	    .stroke("#c0ddf7")
+	rainbow.setSpectrum("#25a8f9", "#03002b");
     }
     return "#" + rainbow.colourAt(x);
 }
@@ -23,7 +35,7 @@ function drawEverything(state) {
     var canvas = document.querySelector("canvas");
     var context = canvas.getContext("2d");
     var backdrop = canvas.getContext("2d");
-    backdrop.fillStyle = "purple";
+    backdrop.fillStyle = "#997864";
     context.fillRect(0, 0, 500, 500);
 
 
@@ -56,11 +68,10 @@ function drawEverything(state) {
 
     }
 
-    var urban_color = color_gradient(state[0]);
-    var farm_color = color_gradient(state[1]);
-    var forest_color = color_gradient(state[2]);
-    var river_color = color_gradient(state[3]);
-
+    var urban_color = color_gradient(state[0], "City");
+    var farm_color = color_gradient(state[1], "Farm");
+    var forest_color = color_gradient(state[2], "Forest");
+    var river_color = color_gradient(state[3], "River");
 
     drawPoly([ 30,30, 50,20, 100,40, 150,70, 160,90, 150,130, 120,160, 60,100, 20,40],
        urban_color, "City", [80, 70], "white");
@@ -70,4 +81,4 @@ function drawEverything(state) {
        forest_color, "Forest", [80, 370]);
     drawPoly([ 500,0, 450,0, 230,200, 220,500, 270,500, 270,270, 500,50 ],
        river_color, "River", [350, 150]);
-}
+
