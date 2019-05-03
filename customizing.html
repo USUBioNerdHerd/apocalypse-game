@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="USU Bio Nerd Herd" content="Mo Christman, Michael Stemkovski, Justin Tirell, Amanda Gallinat, Katie Weglarz, Will Pearse, and Bootstrap contributors">
+    <title>USU Bio Nerd Herd - Customizing the Simulator</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/starter-template/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com//docs/4.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <style>
+      .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      }
+
+      @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+      }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="starter-template.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="./index.html">Customizing the Simulator</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+	<span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+	<ul class="navbar-nav mr-auto">
+	  <li class="nav-item">
+            <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+	  </li>
+	  <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+	  </li>
+      	  <li class="nav-item">
+            <a class="nav-link active" href="./customizing.html">Build your own game</a>
+	  </li>
+	  <li class="nav-item">
+            <a class="nav-link" href="https://usubionerdherd.github.io/">USU Bio Nerd Herd</a>
+	  </li>
+	  <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">People</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="http://seedscape.github.io/BeckmanLab/Lab.html" target="_blank">Justin Tirrell</a>
+	      <a class="dropdown-item" href="https://www.researchgate.net/profile/Mo_Christman" target="_blank">Mo Christman</a>
+              <a class="dropdown-item" href="http://pearselab.com/" target="_blank">Michael Stemkobski</a>
+	      <a class="dropdown-item" href="http://www.amandagallinat.com/" target="_blank">Amanda Gallinat</a>
+	      <a class="dropdown-item" href="http://pearselab.com/people" target="_blank">Katie Weglarz</a>
+	      <a class="dropdown-item" href="http://pearselab.com/" target="_blank">Will Pearse</a>        </div>
+	  </li>
+	</ul>
+      </div>
+    </nav>
+
+    <main role="main" class="container">
+
+      <div class="starter-template mt-5">
+	<h1>About the Cache Valley Simulator</h1>
+
+	<p class="lead"><h3>How to customize the game</h3></p>
+	<p><b>Starting point: Finding the right file</b></p>
+	<p>The story of the game is in the file called <b>state.json</b>. This file can be found in the main folder (apocalypse-game). This file can be easily opened in TextEdit on a Mac, Notepad in Windows, or a similar text editor of your choosing.</p>
+
+	<p><b>The Introduction</b></p>
+	<p>When you open the file, you will see a lot of text, brackets, and colons. Don't panic. This is going to be easy. The top of the file should look something like this:</p>
+	<div class="card-header"><code><p class="text-dark">
+	      {"Introduction": "It seems like you've been driving for days, but it has really only been four hours. As a tree detective you have become used to a life of danger and intrigue. Everywhere you go people know your name, Dr. Sammie....", "option 1"</p></code>
+	</div>
+	<br>
+	<br>
+
+	This is the place to put the introduction for your game. Make the game fun by placing a fun background story here. To add your own introduction for the game, replace everything between the <b>"Introduction" : &quot</b> and <b>&quot</b>, with your own game introduction. The format should end up looking like this:
+	<br>
+	<br>
+	<div class="card-header"><code><p class="text-dark">
+	      {"Introduction": "<b>&lt;YOUR INTRODUCTION HERE&gt;</b>", "option 1":...
+	</p></code></div>
+	<br>
+	<br>
+	<p><b>"Options"</b></p>
+	<p>Information for each decision you make in the game is grouped in the following format throughout state.json:</p>
+	<div class="card-header"><code><p class="text-dark">
+	      {"option": "<b> &lt;All of the information related to the choices of the game.&gt</b>" }
+	</p></code></div>
+
+	<br>
+	<br>
+	<p><b>Customizing the Scenarios</b></p>
+	<p>From here you should be able to add the information for each <b>scenario</b> by changing the entries for <b>title</b> and <b>summary. </b> Changing these entries will change the title for the scenario and the information given to the user respectively. The responses that the user can choose from can be changed by replacing the text for <b>"first_option" :</b> and <b>"second_option." :</b> Links to scientific articles and popular science magazine articles can be included by replacing the code from the values after <b>"pop-sci" :</b> and <b> "literature" :</b> with the <b>html links</b> for the desired resources. A customized game question will follow the following format. </p>
+	
+
+	<div class="card-header"><code><p class="text-dark">
+
+	      "option 1": { </br>
+    	      "title": "<b> &lt;Add the title for the question here!&gt</b>",</br>
+    	      "summary": <b> "&lt;Put a summary for the question here!&gt</b>",</br>
+    	      "pop-sci": <b> "&lt;Add an html address linking to a popular science article related to your question here!.&gt"</b>,</br>
+    	      "literature": <b> "&lt;Add an address linking to a scientific article related to your quesiton here!.&gt"</b>,</br>
+    	      "choices": {</br>
+    	      "first_option": <b> "&lt;Place a response for the user to choose from here!.&gt"</b>,</br>
+	      "second_option": <b> "&lt;Place a response for the user to choose from here!.&gt"</b>,}},</br>
+	</p></code></div>
+
+	<br>
+	<br>
+	<p>Customize responsibly!</p>
+	
+      </div>
+
+    </main><!-- /.container -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="https://getbootstrap.com/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script><script src="https://getbootstrap.com/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script><script src="./state.js"></script>
+  </body>
+</html>
