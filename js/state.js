@@ -44,6 +44,7 @@ class State {
 	drawEverything(this.current_state())
 	curr_choice += 1;
 	document.getElementById("choice-text-block").innerHTML = data[curr_choice].summary;
+	document.getElementById("choice-text-title").innerHTML = data[curr_choice].title;
 	return([this.urban, this.forest, this.farmland, this.river]);
     }
 

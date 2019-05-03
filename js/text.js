@@ -1,5 +1,5 @@
 var data = [
-    {name:null, title:null,
+    {name:"Opening", title:"Welcome to Cache Valley!",
      summary:"It seems like you've been driving for days, but it has really only been four hours. As a tree detective you have become used to a life of danger and intrigue. Everywhere you go people know your name, Dr. Sammie Jones. With a feather in your hat, you ride in your Honda Accord, breezing down the highway with your hands at 10 and 2. You see a billboard advertising for a city exit. 'Welcome to Brandenburg! Home of the first canine astronaught!' A strange force compells you to take the exit. As you drive down the main street of Brandenburg you notice a commotion at the City Hall. You park and enter Brandenburg City Hall. The room is hot and crowded with unhappy people. You are just about to get back in your car when several members of the angry public place you in a chair... They have made you their King. As their king, it is your duty to be a just and kind ruler. These are your challenges.",
      pop_sci:null, literature:null, choice:[{short:null,change:[50,50,50,50]},{short:null,change:[50,50,50,50]}]},
     {

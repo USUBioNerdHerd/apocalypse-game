@@ -62,31 +62,65 @@
       </div>
     </nav>
 
-    <main role="main" class="container">
-
-      <div class="starter-template">
-	<h1>Bootstrap starter template</h1>
-	<canvas width="500" height="500"></canvas>
-	<p id="choice-text-block">Should never see me.</p>
-	<button onclick="master_selection(0)">Option 1</button>
-	<button onclick="master_selection(1)">Option 2</button>
-	<script src="./js/display.js"></script>
-	<script src="./js/state.js"></script>
-	<script src="./js/text.js"></script>
-	<script src="./js/rainbowvis.js"></script>
-	<script>
-	  // Setup beginning of game state
-	  var curr_choice = 0;
-	  state = new State(0, 0, 0, 0);
-	  drawEverything(state.current_state())
-	  document.getElementById("choice-text-block").innerHTML = data[0].summary;
-	  
-	</script>
-
+    <div class="row mt-5 ml-5">
+      <div class="col-sm-6">
+	<canvas width="500" height="500"></canvas></div>
+      <div class="col-sm-6"><div class="card-body">
+	  <h5 class="card-title" id="choice-text-title">You should never even see me</h5>
+	  <p class="card-text" id="choice-text-block"> You should never even see me
+	  </p>
+	</div>
       </div>
+      
+    </div>
+    
+</div>
+</div>
+</div>
 
-    </main><!-- /.container -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="https://getbootstrap.com/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script><script src="https://getbootstrap.com/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
-  </body>
+<!-- Card that holds options --> 
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">Time to make a choice...</h5>
+    <p class="card-text" id="choice-text-short">You should never even see me.</p></p>
+    <a href="#" class="card-link" id="choice_one_button"><button onclick="master_selection(0)">Option 1</button></a>
+    <a href="#" class="card-link" id="choice_two_button"><button onclick="master_selection(0)">Option 2</button></a>
+  </div>
+</div>
+
+
+</div>
+
+</div>
+</div>
+<!-- Card that holds further reading --> 
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">For some further reading</h5>
+    <p class="card-text">Some popular science articles about the issue and some articlesfrom the literature.</p>
+    <a href="#" class="card-link">Article 1</a>
+    <a href="#" class="card-link">Article 2</a>
+  </div>
+</div>
+</div>
+
+</main><!-- /.container -->
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="https://getbootstrap.com/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script><script src="https://getbootstrap.com/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+  <script src="./js/display.js"></script>
+  <script src="./js/state.js"></script>
+  <script src="./js/text.js"></script>
+  <script src="./js/rainbowvis.js"></script>
+  <script>
+    var curr_choice = 0;
+    state = new State(0, 0, 0, 0);
+    drawEverything(state.current_state())
+    document.getElementById("choice-text-block").innerHTML = data[0].summary;
+    document.getElementById("choice-text-title").innerHTML = data[0].title;
+    
+  </script>
+</body>
+
 </html>
