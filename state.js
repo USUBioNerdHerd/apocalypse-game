@@ -11,21 +11,18 @@ class Choice {
 	this.change_two = change_two;
     }
 
-    pick_choice(choice){
-		var choiceDisplay = prompt("You have a choice to make : " + first_choice);
-		if (choiceDisplay == "1") {
-			alert("You decided to " + option_one + "let's see what happens...");
-		}
-		else if (choiceDisplay == "2"){
-			alert("You decided to " + option_two + "let's see what happens...");
-		}
-		else {
-			alert("That isn't one of your options! You can enter either 1 or 2.");
-		}
+	select_option1(){
+	master_selection(1)
+	}
 
-	if(choice == this.option_one)
+	select_option2(){		
+	master_selection(2)}
+
+	master_selection(choice){
+		if(choice == 1)
 	    return(this.change_one);
 	return(this.change_two);
+	//display next option
     }
 }
 
