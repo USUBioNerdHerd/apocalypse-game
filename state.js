@@ -1,6 +1,7 @@
 // Function to handle mouse-clicks
 function master_selection(choice){
-    state.change_landscape(data[curr_choice].choice[choice].change);
+    if(curr_choice >= choice)
+	state.change_landscape(data[curr_choice].choice[choice].change);
 }
 
 // Wrapper for environment checks
@@ -25,6 +26,10 @@ class State {
 	this.river = river;
     }
 
+    current_state(){
+	return([this.urban, this.forest, this.farmland, this.river])
+    }
+
     change_landscape(choice_change){
 	
 	this.urban += choice_change[0];
@@ -36,10 +41,11 @@ class State {
 	this.river += choice_change[3];
 	this.river = check_env(this.river, "river");
 	
-	//engine.update(this);
+	drawEverything(this.current_state())
 	curr_choice += 1;
 	document.getElementById("choice-text-block").innerHTML = data[curr_choice].summary;
 	return([this.urban, this.forest, this.farmland, this.river]);
     }
 
 }
+

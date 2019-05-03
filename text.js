@@ -1,8 +1,7 @@
 var data = [
     {name:null, title:null,
      summary:"It seems like you've been driving for days, but it has really only been four hours. As a tree detective you have become used to a life of danger and intrigue. Everywhere you go people know your name, Dr. Sammie Jones. With a feather in your hat, you ride in your Honda Accord, breezing down the highway with your hands at 10 and 2. You see a billboard advertising for a city exit. 'Welcome to Brandenburg! Home of the first canine astronaught!' A strange force compells you to take the exit. As you drive down the main street of Brandenburg you notice a commotion at the City Hall. You park and enter Brandenburg City Hall. The room is hot and crowded with unhappy people. You are just about to get back in your car when several members of the angry public place you in a chair... They have made you their King. As their king, it is your duty to be a just and kind ruler. These are your challenges.",
-     pop_sci:null, literature:null, choice:[{short:null,change:[0,0,0,0]},{short:null,change:[0,0,0,0]}]},
-    "",
+     pop_sci:null, literature:null, choice:[{short:null,change:[50,50,50,50]},{short:null,change:[50,50,50,50]}]},
     {
     	name:"Housing Crisis",
     	title: "Toxic",
@@ -43,8 +42,8 @@ var data = [
 	"pop_sci": "https://theoutline.com/post/2450/instagram-is-loving-nature-to-death?zd=1&zi=z76muwwf",
 	literature: "https://doi.org/10.1016/j.biocon.2016.10.009",
 	choice: [
-	    {sort:"Build more infrastructure", change:[10, 0, 0, -10]},
-	    {sort:"Charge fees for entrace to the pools", change:[-5, 0, 0, 10]}
+	    {short:"Build more infrastructure", change:[10, 0, 0, -10]},
+	    {short:"Charge fees for entrace to the pools", change:[-5, 0, 0, 10]}
 	]
     },
     {
@@ -54,8 +53,8 @@ var data = [
 	"pop_sci": "https://www.nature.com/articles/d41586-019-01026-8",
 	literature: "https://esajournals.onlinelibrary.wiley.com/doi/pdf/10.1002/ecs2.2105",
 	choice: [
-	    {sort:"Plant a community urban forest", change:[5, 5, 0, 0]},
-	    {sort:"Encourage locals to grow more trees locally", change:[10, 0, 0, 0]}
+	    {short:"Plant a community urban forest", change:[5, 5, 0, 0]},
+	    {short:"Encourage locals to grow more trees locally", change:[10, 0, 0, 0]}
 	]
     },
     {
@@ -65,8 +64,8 @@ var data = [
 	"pop_sci": null, 
 	literature: null,
 	choice: [
-	    {sort:"Cycle crops", change:[0, 0, -10, -10]},
-	    {sort:"Distributed agricultural systems", change:[0, -10, -5, -5]}
+	    {short:"Cycle crops", change:[0, 0, -10, -10]},
+	    {short:"Distributed agricultural systems", change:[0, -10, -5, -5]}
 	]
     },
     {
@@ -76,8 +75,8 @@ var data = [
 	"pop_sci": "https://www.swep.net/refrigerant-handbook/5.-refrigerants/sd5/",
 	literature: "https://onlinelibrary.wiley.com/doi/full/10.1002/ece3.2316",
 	choice: [
-	    {sort:"Overhaul of public transportation", change:[10, 5, 5, 5]},
-	    {sort:"Outreach to locals", change:[5, 2, 2, 2]}
+	    {short:"Overhaul of public transportation", change:[10, 5, 5, 5]},
+	    {short:"Outreach to locals", change:[5, 2, 2, 2]}
 	]
     },
     {
@@ -87,8 +86,8 @@ var data = [
 	"pop_sci": "https://www.deseretnews.com/article/865580228/Utah-facing-costly-water-pollution-problem.html",
 	literature: null,
 	choice: [
-	    {sort:"Increase wetland habitat", change:[0, 5, -5, 10]},
-	    {sort:"Install a filtration plant", change:[0, 0, 0, 10]}
+	    {short:"Increase wetland habitat", change:[0, 5, -5, 10]},
+	    {short:"Install a filtration plant", change:[0, 0, 0, 10]}
 	]
     }
 ]
