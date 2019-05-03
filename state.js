@@ -15,18 +15,8 @@ class Choice {
 
 }
 
-function select_option1(){
-    master_selection(1);
-}
-
-function select_option2(){
-    master_selection(2);
-  }
-
 function master_selection(choice){
-    if(choice == 1)
-	state.change_landscape(data[curr_choice][0]);
-    state.change_landscape(data[curr_choice][1]);
+    state.change_landscape(data[curr_choice].choice[choice].change);
 }
 
 
