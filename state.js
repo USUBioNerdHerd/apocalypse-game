@@ -40,9 +40,25 @@ class State {
     
     change_landscape(choice_change){
 	this.urban += choice_change[0];
+		if (this.urban < 0) {
+   		console.log(Urban environment depleted)
+   		this.urban = 0;
+		} 
 	this.forest += choice_change[1];
+		if (this.forest < 0) {
+   		console.log(Forest environment depleted)
+   		this.forest = 0;
+		} 
 	this.farmland += choice_change[2];
+		if (this.farmland < 0) {
+   		console.log(Farmland depleted)
+   		this.farmland = 0;
+		} 
 	this.river += choice_change[3];
+		if (this.river < 0) {
+   		console.log(River environment depleted)
+   		this.river = 0;
+		} 
 
 	//engine.update(this);
 	curr_choice += 1;
