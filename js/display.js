@@ -6,13 +6,13 @@ function color_gradient(x, component) {
 	rainbow.setSpectrum('white', 'black');
     }
     if (component == "Farm"){
-	rainbow.setSpectrum('green', 'yellow');
+	rainbow.setSpectrum("#165b02", "#47300a");
     }
     if (component == "Forest"){
-	rainbow.setSpectrum('green', 'brown');
+	rainbow.setSpectrum("#193a00", "#231600");
     }
     if (component == "River"){
-	rainbow.setSpectrum('blue', 'brown');
+	rainbow.setSpectrum("#25a8f9", "#03002b");
     }
     return "#" + rainbow.colourAt(x);
 }
@@ -23,7 +23,7 @@ function drawEverything(state) {
     var canvas = document.querySelector("canvas");
     var context = canvas.getContext("2d");
     var backdrop = canvas.getContext("2d");
-    backdrop.fillStyle = "purple";
+    backdrop.fillStyle = "#997864";
     context.fillRect(0, 0, 500, 500);
 
 
@@ -48,13 +48,13 @@ function drawEverything(state) {
 
     }
 
-    var urban_color = color_gradient(state[0]);
-    var farm_color = color_gradient(state[1]);
-    var forest_color = color_gradient(state[2]);
-    var river_color = color_gradient(state[3]);
+    var urban_color = color_gradient(state[0], "City");
+    var farm_color = color_gradient(state[1], "Farm");
+    var forest_color = color_gradient(state[2], "Forest");
+    var river_color = color_gradient(state[3], "River");
 
 
-    drawPoly([ 10,10, 10,70, 80,120, 150,90, 160,40 ], urban_color, "City", [80, 70], "red");
+    drawPoly([ 10,10, 10,70, 80,120, 150,90, 160,40 ], urban_color, "City", [80, 70]);
     drawPoly([ 490,490, 480,270, 300,300, 270,460, 400,490 ] , farm_color, "Farm", [400, 400]);
     drawPoly([ 10,490, 200,460, 200,200, 50,300, 10,450 ] , forest_color, "Forest", [80, 370]);
     drawPoly([ 500,0, 450,0, 230,200, 220,500, 270,500, 270,270, 500,50 ] , river_color, "River", [350, 150]);
