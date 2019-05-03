@@ -91,77 +91,16 @@ class Display {
 	// Call draw
     }
 
-    // Draw current game state to screen
-    draw(forest_hp, city_hp, farm_hp, river_hp, frame) {
-
-	// load in ~~constant~~ parameters for:
-	// dimensions of screen
-	// boundaries of polygons for forest, city, farm, river
-	// animation parameters, eg. frame rate, wiggle amount
-	// sprites?
-
-	// Perhaps we do something different at the start of the game?
-	begin() {
-	    //the environment start up will contain information: standard language; needs to remember information
-	    //intial canvas of the map 
-	    //welcome box..click on this welcome box. It then redirects you to the main screen of the game 
-	    //title
-	    //description box
-	    //sound or music....maybe
-	    
-	}
-	// draw background layer
-
-	// draw each of 4 polygons
-
-	// display sprite
-	// determine position of sprite depending on frame
-	// * alternatively, we could have multiple sprites instead of moving them
-	// ** or, we should do both: moving, changing sprites
-
-	// we need a function to define position and/or update sprite based on frame
-
-	// Perhaps we do something different at the start of the game?
-	begin() {
-	    //the environment start up will contain information: standard language; needs to remember information
-	    //intial canvas of the map 
-	    //welcome box..click on this welcome box. It then redirects you to the main screen of the game 
-	    //title
-	    //description box
-	    //sound or music....maybe
-	    
-	}
-	// draw background layer
-
-	// draw each of 4 polygons
-
-	// display sprite
-	// determine position of sprite depending on frame
-	// * alternatively, we could have multiple sprites instead of moving them
-	// ** or, we should do both: moving, changing sprites
-
-	// we need a function to define position and/or update sprite based on frame
-
-	// pass frame to next iteration of draw()
-	// alternatively, frame count be saved globally
-
-    }
-
-    ask_question(text, others){
-	// Create a text box
-	// The text box will have 4 answeres to a question
-	// Each answer will be able to be selected by a button
-	// Text box will have a nice 'stone' texture with a box at the top for the text to appear
-	// 4 buttons below in a 2 x 2
-    }
     
-  function color_gradient(percent) {
-  var numberOfItems = 100
-  var rainbow = new Rainbow();
-  percent = rainbow.setNumberRange(1, numberOfItems);
-  color = rainbow.setSpectrum('red', 'black');
-  backdrop.fillStyle = color;
-  return rainbow.colourAt(percent);
+    
 }
 
-var update_river = river.color_gradient(40)
+
+function color_gradient(percent) {
+    var numberOfItems = 100
+    var rainbow = new Rainbow();
+    percent = rainbow.setNumberRange(1, numberOfItems);
+    color = rainbow.setSpectrum('red', 'black');
+    backdrop.fillStyle = color;
+    return rainbow.colourAt(percent);
+}
