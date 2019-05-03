@@ -1,0 +1,38 @@
+{
+    "Introduction": "It seems like you've been driving for days, but it has really only been four hours. As a tree detective you have become used to a life of danger and intrigue. Everywhere you go people know your name, Dr. Sammie Jones. With a feather in your hat, you ride in your Honda Accord, breezing down the highway with your hands at 10 and 2. You see a billboard advertising for a city exit. \"Welcome to Brandenburg! Home of the first canine astronaught!\" A strange force compells you to take the exit. As you drive down the main street of Brandenburg you notice a commotion at the City Hall. You park and enter Brandenburg City Hall. The room is hot and crowded with unhappy people. You are just about to get back in your car when several members of the angry public place you in a chair... They have made you their King. As their king, it is your duty to be a just and kind ruler. These are your challenges.",
+    "option 1": "Housing Crisis",
+    "title": "New Neighbors!",
+    "summary": "The Big name industries are expanding into your town bringing people, jobs, and money. The cost of living in the community is rising, and the demand for housing is much greater than the supply. Big change has brought a big problem. Where will all of these people live? You may either increase housing within the city limits or work to convert the wetlands in to a more suitable human habitat.",
+    "pop-sci": {
+        "literature": {
+            "first_option": "Increase housing within city limits",
+            "second_option": "Convert wetlands to urban land",
+            "option 2": "Energy Crisis",
+            "title": "BLACKOUT!",
+            "summary": "Your community doesn't have enough electricity to meet its needs. Companies are eager to dig into coal reserves that exist outside the city limits, but there are concerns within the community about the impacts of burning coal on the local air quality. The federal government has been looking for a potential cities to power with small modular nuclear reactors. The citizens of the community are concerned that deuteriated water will leak into the water table. Wind energy and hydroelectric energy are available by placing wind mills in the foothills to the East and hydroelectric dams in the river to the West. The community memebers are generallly affable to pursue these options. Concerned members of the community worry that these solutions will inhibit fish migration patterns, decrease the prevalence of birds, and tarnish the beautiful landscape that fueled their reason to move here.",
+            "pop_sci": "https://www.nationalgeographic.com/environment/energy/reference/nuclear-energy/",
+            "literature": {
+                "first_option": "Expand Nuclear Energy (Small Modular Reactors)",
+                "second_option": "Burn Coal and Natural Gas",
+                "third_option": "Use Wind and Hydroelectric energy",
+                "option 3": "Food Crisis",
+                "title": "Hunger is among us",
+                "summary": "Over the past few years, your community has increasingly felt the impacts of food insecurity. While food banks and charitable organizations are doing a lot to feed hungry locals, many people are pointing to the high cost of local food. People have suggested that more food producers be allowed to use local resources to produce cheap food. An interested party has suggested starting a fish farm. Experts warn that fish farms have been known to affect local water quality. Others are suggesting that the less arable land to the West be sold as rangeland to increase local meat supplies. Officals worry about how large scale butcehr operations may affect the ecosystem.",
+                "pop_sci": {
+                    "literature": null,
+                    "first_option": "Increase Wetland Habitat",
+                    "second_option": "Install a Filtration Plant",
+                    "option 4": "Fun Crisis",
+                    "title": "Toxic",
+                    "summary": "High levels of nutrients and hot days are combining to cause algal blooms in Lazybottom Lake. People have been warned about the toxins, but no one warned their dogs! Dogs have been dying as a result of swimming in the lake. The water quality experts say that the algal bloom in Lake Lazybottom is another casualty of Nitrogen and Phosphorous pollution in the water. They tell you that this pollution mainly comes from local agrigculture. Some experts are suggesting that programs be started to aide local farmers in adjusting their practices to reduce the amount of fertilizer that runs off into local lakes and streams. Others argue that wetland habitat should be expanded because it will clean the water. A few experts are arguing that it is worthwhile to install a filtration plant to clean the water.",
+                    "pop_sci": "https://www.deseretnews.com/article/865580228/Utah-facing-costly-water-pollution-problem.html",
+                    "third_option": "Initiate a program to reduce agricultural runoff",
+                    "option 5": "Environmental Crisis",
+                    "option 6": "Land Usage Crisis",
+                    "option 7": "Air Quality Crisis",
+                    "option 8": "Water Quality Crisis"
+                }
+            }
+        }
+    }
+}
