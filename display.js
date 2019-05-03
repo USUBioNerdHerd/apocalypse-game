@@ -83,7 +83,7 @@ class Display {
 	labels.fillText("Forest", 80, 370);
 	labels.fillText("Farm", 400, 400);
 	labels.fillText("River", 350, 150);
-	
+	console.log("test");
     }
 
     update_environment(component, change) {
