@@ -1,0 +1,167 @@
+<html>
+
+<head>
+</head>
+
+<body>
+
+
+  <canvas width="500" height="500"></canvas>
+
+  <script>
+
+
+//function color_gradient(percent) {
+  //var rainbow = new Rainbow();
+  //percent = rainbow.setNumberRange(1, numberOfItems);
+  //color = rainbow.setSpectrum('red', 'black');
+  //backdrop.fillStyle = color;
+  //return rainbow.colourAt(percent);
+
+  // this is a placeholder just to make it a little dynamics
+//  if(percent > 50) color = "green";
+//  if(percent <= 50) color = "black";
+//  return color
+//}
+
+function color_gradient(x, component) {
+   numberOfItems = 100
+   var rainbow = new Rainbow();
+   rainbow.setNumberRange(0, numberOfItems);
+     if (component == "City"){
+       rainbow.setSpectrum('white', 'black');
+     }
+     if (component == "Farm"){
+       rainbow.setSpectrum('green', 'yellow');
+     }
+     if (component == "Forest"){
+       rainbow.setSpectrum('green', 'brown');
+     }
+     if (component == "River"){
+       rainbow.setSpectrum('blue', 'brown');
+     }
+   return "#" + rainbow.colourAt(x);
+ }
+
+
+function drawEverything(state) {
+
+  // draws background
+  var canvas = document.querySelector("canvas");
+  var context = canvas.getContext("2d");
+  var backdrop = canvas.getContext("2d");
+  backdrop.fillStyle = "purple";
+  context.fillRect(0, 0, 500, 500);
+
+
+  // to draw polygons
+  function drawPoly(coords, color, label_text, label_coords, label_color = "white") {
+    var poly = coords;
+    //var poly=[ 105,105, 200,150, 150,200, 110,190 ];
+    var ctx = canvas.getContext('2d');
+    ctx.fillStyle = color;
+
+    ctx.beginPath();
+    ctx.moveTo(poly[0], poly[1]);
+    for( item=2 ; item < poly.length-1 ; item+=2 ){ctx.lineTo( poly[item] , poly[item+1] )}
+
+    ctx.closePath();
+    ctx.fill();
+
+    var labels = canvas.getContext("2d");
+    labels.fillStyle = label_color;
+    labels.font = "20px Arial";
+    labels.textAlign = "center";
+    labels.fillText(label_text, label_coords[0], label_coords[1]);
+
+  }
+
+  // what I ultimately want:
+  // var urban_color <- color_gradient(State.urban);
+  // var farm_color <- color_gradient(State.farmland);
+  // var forest_color <- color_gradient(State.forest);
+  // var river_color <- color_gradient(State.river);
+
+  // a placeholder:
+  var urban_color = color_gradient(state[0]);
+  var farm_color = color_gradient(state[1]);
+  var forest_color = color_gradient(state[2]);
+  var river_color = color_gradient(state[3]);
+
+
+  // city
+  drawPoly([ 10,10, 10,70, 80,120, 150,90, 160,40 ], urban_color, "City", [80, 70], "red");
+
+  // farm
+  drawPoly([ 490,490, 480,270, 300,300, 270,460, 400,490 ] , farm_color, "Farm", [400, 400]);
+
+  // forest
+  drawPoly([ 10,490, 200,460, 200,200, 50,300, 10,450 ] , forest_color, "Forest", [80, 370]);
+
+  // river
+  drawPoly([ 500,0, 450,0, 230,200, 220,500, 270,500, 270,270, 500,50 ] , river_color, "River", [350, 150]);
+
+}
+
+// to be used as engine.update()
+function update(curr_state){
+  drawEverything(curr_state);
+}
+
+
+drawEverything([10,10,10,10]);
+setTimeout(function(){ drawEverything([60,10,10,10]); }, 500);
+setTimeout(function(){ drawEverything([60,60,10,10]); }, 1000);
+setTimeout(function(){ drawEverything([60,60,60,10]); }, 1500);
+setTimeout(function(){ drawEverything([60,60,60,60]); }, 2000);
+
+
+
+
+
+//var i;
+//for (i = 0; i < 10; i++) {
+//  setTimeout(update([10,50,50,50]), (i*100));
+//}
+
+  // would be nice to use this or something like it later
+  // stolen from https://gist.github.com/winduptoy/8b5c574e0e33bf547a31
+  // function roundCorners(path,radius) {
+  // 	var segments = path.segments.slice(0);
+  // 	path.removeSegments();
+
+  // 	for(var i = 0, l = segments.length; i < l; i++) {
+  // 		var curPoint = segments[i].point;
+  // 		var nextPoint = segments[i + 1 == l ? 0 : i + 1].point;
+  // 		var prevPoint = segments[i - 1 < 0 ? segments.length - 1 : i - 1].point;
+  // 		var nextDelta = curPoint.subtract(nextPoint);
+  // 		var prevDelta = curPoint.subtract(prevPoint);
+//
+  // 		nextDelta.length = radius;
+  // 		prevDelta.length = radius;
+//
+  // 		path.add(
+  // 			new paper.Segment(
+  // 				curPoint.subtract(prevDelta),
+  // 				null,
+  // 				prevDelta.divide(2)
+  // 			)
+  // 		);
+//
+  // 		path.add(
+  // 			new paper.Segment(
+  // 				curPoint.subtract(nextDelta),
+  // 				nextDelta.divide(2),
+  // 				null
+  // 			)
+  // 		);
+  // 	}
+  // 	path.closed = true;
+  // 	return path;
+  // }
+
+  </script>
+
+</body>
+
+</html>

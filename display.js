@@ -1,21 +1,23 @@
 class Display {
 
-    constructor(params) {
+    constructor(params) {}
 	//////////////////////////////
 	// Basic plot to begin ///////
 	//////////////////////////////
 	// Canvas
-  function color_gradient(percent) {
-    //var rainbow = new Rainbow();
-    //percent = rainbow.setNumberRange(1, numberOfItems);
-    //color = rainbow.setSpectrum('red', 'black');
-    //backdrop.fillStyle = color;
-    //return rainbow.colourAt(percent);
-    return "black"
-  }
 
 
-  function drawEverything(state) {
+
+  drawEverything(state) {
+
+    function color_gradient(percent) {
+      //var rainbow = new Rainbow();
+      //percent = rainbow.setNumberRange(1, numberOfItems);
+      //color = rainbow.setSpectrum('red', 'black');
+      //backdrop.fillStyle = color;
+      //return rainbow.colourAt(percent);
+      return "black"
+    }
 
     // draws background
     var canvas = document.querySelector("canvas");
@@ -74,9 +76,6 @@ class Display {
 
   }
 
-
-
-}
 
 }
 
