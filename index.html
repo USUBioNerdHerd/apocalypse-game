@@ -67,17 +67,17 @@
       <div class="starter-template">
 	<h1>Bootstrap starter template</h1>
 	<canvas width="500" height="500"></canvas>
-
-	<button onclick="select_option1()">Option 1</button>
-	<button onclick="select_option2()">Option 2</button>
+	<p id="choice-text-block">Should never see me.</p>
+	<button onclick="master_selection(1)">Option 1</button>
+	<button onclick="master_selection(2)">Option 2</button>
 	<script src="./display.js"></script>
 	<script src="./state.js"></script>
 	<script src="./text.js"></script>
 	<script>
 	  // Setup beginning of game state
 	  var curr_choice = 0;
-	  document.write(data.Introduction);
 	  engine = new Display();
+	  document.getElementById("choice-text-block").innerHTML = data[0];
 	  state = new State(50, 50, 50, 50);
 	</script>
 

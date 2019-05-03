@@ -5,94 +5,79 @@ class Display {
 	// Basic plot to begin ///////
 	//////////////////////////////
 	// Canvas
-	var canvas = document.querySelector("canvas");
-	var context = canvas.getContext("2d");
-	context.fillStyle = "red";
-	context.fillRect(10, 10, 100, 50);
+  function color_gradient(percent) {
+    //var rainbow = new Rainbow();
+    //percent = rainbow.setNumberRange(1, numberOfItems);
+    //color = rainbow.setSpectrum('red', 'black');
+    //backdrop.fillStyle = color;
+    //return rainbow.colourAt(percent);
+    return "black"
+  }
 
-	// Background and components
-	var boxes = document.querySelector("canvas").getContext("2d");
-	boxes.strokeStyle = "blue";
-	boxes.strokeRect(10, 100, 50, 50);
-	boxes.lineWidth = 5;
-	boxes.strokeRect(100, 100, 50, 50);
-	context.fillStyle = "yellow";
-	context.fillRect(100, 100, 50, 50);
 
-	var lines = document.querySelector("canvas").getContext("2d");
-	lines.beginPath();
-	for (var y = 200; y < 300; y += 10) {
-	    lines.strokeStyle = "green";
-	    lines.moveTo(10, y);
-	    lines.lineTo(90, y);
-	}
-	lines.stroke();
+  function drawEverything(state) {
 
-	var backdrop = canvas.getContext("2d");
-	backdrop.fillStyle = "brown";
-	context.fillRect(0, 0, 500, 500);
+    // draws background
+    var canvas = document.querySelector("canvas");
+    var context = canvas.getContext("2d");
+    var backdrop = canvas.getContext("2d");
+    backdrop.fillStyle = "purple";
+    context.fillRect(0, 0, 500, 500);
 
-	// The landscape types
-	var city = canvas.getContext("2d");
-	backdrop.fillStyle = "gray";
-	city.beginPath();
-	city.moveTo(10, 10);
-	city.lineTo(10, 70);
-	city.lineTo(80, 120);
-	city.lineTo(150, 90);
-	city.lineTo(140, 40);
-	city.fill();
 
-	var farm = canvas.getContext("2d");
-	backdrop.fillStyle = "green";
-	farm.beginPath();
-	farm.moveTo(490, 490);
-	farm.lineTo(480, 270);
-	farm.lineTo(300, 300);
-	farm.lineTo(270, 460);
-	farm.lineTo(400, 490);
-	farm.fill();
+    // to draw polygons
+    function drawPoly(coords, color, label_text, label_coords, label_color = "white") {
+      var poly = coords;
+      //var poly=[ 105,105, 200,150, 150,200, 110,190 ];
+      var ctx = canvas.getContext('2d');
+      ctx.fillStyle = color;
 
-	var forest = canvas.getContext("2d");
-	backdrop.fillStyle = "orange";
-	forest.beginPath();
-	forest.moveTo(10, 490);
-	forest.lineTo(200, 460);
-	forest.lineTo(200, 200);
-	forest.lineTo(50, 300);
-	forest.lineTo(10, 450);
-	forest.fill();
+      ctx.beginPath();
+      ctx.moveTo(poly[0], poly[1]);
+      for( item=2 ; item < poly.length-1 ; item+=2 ){ctx.lineTo( poly[item] , poly[item+1] )}
 
-	var river = canvas.getContext("2d");
-	backdrop.fillStyle = "blue";
-	river.beginPath();
-	river.moveTo(500, 0);
-	river.lineTo(450, 0);
-	river.lineTo(230, 200);
-	river.lineTo(220, 500);
-	river.lineTo(270, 500);
-	river.lineTo(270, 270);
-	river.lineTo(500, 50);
-	river.fill();
+      ctx.closePath();
+      ctx.fill();
 
-	var labels = canvas.getContext("2d");
-	labels.fillStyle = "white";
-	labels.font = "20px Arial";
-	labels.textAlign = "center";
-	labels.fillText("City", 80, 70);
-	labels.fillText("Forest", 80, 370);
-	labels.fillText("Farm", 400, 400);
-	labels.fillText("River", 350, 150);
-	console.log("test");
+      var labels = canvas.getContext("2d");
+      labels.fillStyle = label_color;
+      labels.font = "20px Arial";
+      labels.textAlign = "center";
+      labels.fillText(label_text, label_coords[0], label_coords[1]);
+
     }
 
-    update_environment(component, change) {
-	// Make change to component
-	// Call draw
-    }
+    // what I ultimately want:
+    // var urban_color <- color_gradient(State.urban);
+    // var farm_color <- color_gradient(State.farmland);
+    // var forest_color <- color_gradient(State.forest);
+    // var river_color <- color_gradient(State.river);
 
-    
-    
+    // a placeholder:
+    var urban_color = color_gradient(50);
+    var farm_color = color_gradient(40);
+    var forest_color = color_gradient(30);
+    var river_color = color_gradient(20);
+
+
+    // city
+    drawPoly([ 10,10, 10,70, 80,120, 150,90, 160,40 ], urban_color, "City", [80, 70], "red");
+
+    // farm
+    drawPoly([ 490,490, 480,270, 300,300, 270,460, 400,490 ] , farm_color, "Farm", [400, 400]);
+
+    // forest
+    drawPoly([ 10,490, 200,460, 200,200, 50,300, 10,450 ] , forest_color, "Forest", [80, 370]);
+
+    // river
+    drawPoly([ 500,0, 450,0, 230,200, 220,500, 270,500, 270,270, 500,50 ] , river_color, "River", [350, 150]);
+
+  }
+
+
+
+}
+
 }
 
 
