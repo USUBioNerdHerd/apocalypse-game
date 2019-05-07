@@ -101,8 +101,8 @@
   <div class="card-body">
     <h5 class="card-title">For some further reading</h5>
     <p class="card-text">Some popular science articles about the issue and some articlesfrom the literature.</p>
-    <a href="#" class="card-link">Article 1</a>
-    <a href="#" class="card-link">Article 2</a>
+    <a href="#" class="card-link" id="reference-1">Article 1</a>
+    <a href="#" class="card-link" id="reference-2">Article 2</a>
   </div>
 </div>
 </div>
@@ -123,10 +123,11 @@
     drawEverything(state.current_state())
     document.getElementById("choice-text-block").innerHTML = data[0].summary;
     document.getElementById("choice-text-title").innerHTML = data[0].title;
-
-    document.getElementById("choice-text-short").innerHTML = data[0].text[0];
+    document.getElementById("choice-text-short").innerHTML = data[0].choice[2].text;
     document.getElementById("choice_one_button").innerHTML = data[0].choice[0].short;
     document.getElementById("choice_two_button").innerHTML = data[0].choice[1].short;
+    document.getElementById("reference-1").href = data[0].pop_sci
+    document.getElementById("reference-2").href = data[0].literature
     
   </script>
 </body>
