@@ -45,6 +45,10 @@ class State {
 	curr_choice += 1;
 	document.getElementById("choice-text-block").innerHTML = data[curr_choice].summary;
 	document.getElementById("choice-text-title").innerHTML = data[curr_choice].title;
+	document.getElementById("choice-text-short").innerHTML = data[curr_choice].choice[2].text;
+	document.getElementById("choice_one_button").innerHTML = data[curr_choice].choice[0].short;
+	document.getElementById("choice_two_button").innerHTML = data[curr_choice].choice[1].short;
+
 	return([this.urban, this.forest, this.farmland, this.river]);
     }
 

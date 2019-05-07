@@ -1,7 +1,7 @@
 var data = [
     {name:"Opening", title:"Welcome to Cache Valley!",
      summary:"It seems like you've been driving for days, but it has really only been four hours. As a tree detective you have become used to a life of danger and intrigue. Everywhere you go people know your name, Dr. Sammie Jones. With a feather in your hat, you ride in your Honda Accord, breezing down the highway with your hands at 10 and 2. You see a billboard advertising for a city exit. 'Welcome to Brandenburg! Home of the first canine astronaught!' A strange force compells you to take the exit. As you drive down the main street of Brandenburg you notice a commotion at the City Hall. You park and enter Brandenburg City Hall. The room is hot and crowded with unhappy people. You are just about to get back in your car when several members of the angry public place you in a chair... They have made you their King. As their king, it is your duty to be a just and kind ruler. These are your challenges.",
-     pop_sci:null, literature:null, choice:[{short:null,change:[50,50,50,50]},{short:null,change:[50,50,50,50]}]},
+     pop_sci:null, literature:null, choice:[{short:"Button 1",change:[50,50,50,50]},{short:"Button 2",change:[50,50,50,50]},{text:"Click any button to continue"}]},
     {
     	name:"Housing Crisis",
     	title: "Toxic",
@@ -10,7 +10,8 @@ var data = [
     	literature: null,
     	choice: [
     	    {short:"Increase Wetland Habitat", change:[0, 10, 0, 20]},
-    	    {short:"Install a Filtration Plant", change:[0, -10, 0, 15]}
+    	    {short:"Install a Filtration Plant", change:[0, -10, 0, 15]},
+	    {text:"You can either Increase the Wetland Habitat or Install a Filtration Plant"}
 	]
     },
     {
@@ -21,7 +22,8 @@ var data = [
     	literature: null,
 	choice: [
 	    {short:"Use wind and hydroelectric energy", change:[20, -5, 0, 0]},
-	    {short:"Burn coal and natural gas", change:[10, -10, -10, 0]}
+	    {short:"Burn coal and natural gas", change:[10, -10, -10, 0]},
+    	    {text:"You can either Increase the Wetland Habitat or Install a Filtration Plant"}
 	]
     },
     {
@@ -32,7 +34,8 @@ var data = [
 	literature: "https://science.sciencemag.org/content/333/6047/1289/tab-pdf",
 	choice: [
 	    {short:"Sell rangeland", change:[5, 10, -10, 0]},
-	    {short:"Permit fish farms", change:[5, 0, 0, -10]}
+	    {short:"Permit fish farms", change:[5, 0, 0, -10]},
+	    {text:"You can either Increase the Wetland Habitat or Install a Filtration Plant"}
 	]
     },
     {
@@ -43,7 +46,8 @@ var data = [
 	literature: "https://doi.org/10.1016/j.biocon.2016.10.009",
 	choice: [
 	    {short:"Build more infrastructure", change:[10, 0, 0, -10]},
-	    {short:"Charge fees for entrace to the pools", change:[-5, 0, 0, 10]}
+	    {short:"Charge fees for entrace to the pools", change:[-5, 0, 0, 10]},
+	    {text:"You can either Increase the Wetland Habitat or Install a Filtration Plant"}
 	]
     },
     {
@@ -54,7 +58,8 @@ var data = [
 	literature: "https://esajournals.onlinelibrary.wiley.com/doi/pdf/10.1002/ecs2.2105",
 	choice: [
 	    {short:"Plant a community urban forest", change:[5, 5, 0, 0]},
-	    {short:"Encourage locals to grow more trees locally", change:[10, 0, 0, 0]}
+	    {short:"Encourage locals to grow more trees locally", change:[10, 0, 0, 0]},
+    	    {text:"You can either Increase the Wetland Habitat or Install a Filtration Plant"}
 	]
     },
     {
@@ -65,7 +70,8 @@ var data = [
 	literature: null,
 	choice: [
 	    {short:"Cycle crops", change:[0, 0, -10, -10]},
-	    {short:"Distributed agricultural systems", change:[0, -10, -5, -5]}
+	    {short:"Distributed agricultural systems", change:[0, -10, -5, -5]},
+	    {text:"You can either Increase the Wetland Habitat or Install a Filtration Plant"}
 	]
     },
     {
@@ -76,7 +82,8 @@ var data = [
 	literature: "https://onlinelibrary.wiley.com/doi/full/10.1002/ece3.2316",
 	choice: [
 	    {short:"Overhaul of public transportation", change:[10, 5, 5, 5]},
-	    {short:"Outreach to locals", change:[5, 2, 2, 2]}
+	    {short:"Outreach to locals", change:[5, 2, 2, 2]},
+	    {text:"You can either Increase the Wetland Habitat or Install a Filtration Plant"}
 	]
     },
     {
@@ -87,7 +94,8 @@ var data = [
 	literature: null,
 	choice: [
 	    {short:"Increase wetland habitat", change:[0, 5, -5, 10]},
-	    {short:"Install a filtration plant", change:[0, 0, 0, 10]}
+	    {short:"Install a filtration plant", change:[0, 0, 0, 10]},
+	    {text:"You can either Increase the Wetland Habitat or Install a Filtration Plant"}
 	]
     }
 ]
