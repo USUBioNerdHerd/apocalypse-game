@@ -126,9 +126,10 @@
     document.getElementById("choice-text-short").innerHTML = data[0].choice[2].text;
     document.getElementById("choice_one_button").innerHTML = data[0].choice[0].short;
     document.getElementById("choice_two_button").innerHTML = data[0].choice[1].short;
-    document.getElementById("reference-1").href = data[0].pop_sci
-    document.getElementById("reference-2").href = data[0].literature
-    
+    document.getElementById("reference-1").href = data[0].pop_sci.ref
+    document.getElementById("reference-2").href = data[0].literature.ref
+    document.getElementById("reference-1").innerHTML = data[0].pop_sci.reftext
+    document.getElementById("reference-2").innerHTML = data[0].literature.reftext
   </script>
 </body>
 

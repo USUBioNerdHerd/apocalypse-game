@@ -47,8 +47,11 @@ class State {
 	document.getElementById("choice-text-short").innerHTML = data[curr_choice].choice[2].text;
 	document.getElementById("choice_one_button").innerHTML = data[curr_choice].choice[0].short;
 	document.getElementById("choice_two_button").innerHTML = data[curr_choice].choice[1].short;
-	document.getElementById("reference-1").href = data[curr_choice].pop_sci
-	document.getElementById("reference-2").href = data[curr_choice].literature
+	document.getElementById("reference-1").href = data[curr_choice].pop_sci.ref
+	document.getElementById("reference-2").href = data[curr_choice].literature.ref
+	document.getElementById("reference-1").innerHTML = data[curr_choice].pop_sci.reftext
+	document.getElementById("reference-2").innerHTML = data[curr_choice].literature.reftext
+
 	return([this.urban, this.forest, this.farmland, this.river]);
     }
 
